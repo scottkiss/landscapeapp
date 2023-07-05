@@ -20,6 +20,19 @@ This is an attempt to build custom landscapes, based on https://github.com/cncf/
 * execute yarn `yarn` -> this should fetch all dependencies
 * start a local dev env `yarn run open:src` -> this should start the landscapeapp in dev mode, you should be able to access the landscapeapp on http://localhost:3000
 
+### Step by Step Guide how to get a working landscape locally command
+* mkdir landscapes
+* cd landscapes
+* git clone https://github.com/cdfoundation/cdf-landscape
+* git clone https://github.com/floriankammermann/landscapeapp
+* cd landscapeapp
+* mkdir public
+* export PROJECT_PATH=<YOUR_PATH>/landscapes/cdf-landscape
+* cd <YOUR_PATH>/landscapes/landscapeapp
+* yarn
+* yarn run open:src
+  
+
 ### Make changes to the landscape
 * Open the `settings.yml` in the cdf-landscape
 * Change home -> header to `<h1>my test landscape</h1>`
